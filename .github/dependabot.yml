@@ -1,0 +1,65 @@
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      time: "01:00"
+      timezone: "Chile/Continental"
+      day: "tuesday"
+    open-pull-requests-limit: 3
+    labels:
+      - "JavaScript"
+      - "Dependencies"
+      - "Develop"
+    ignore:
+      - dependency-name: eslint
+      - dependency-name: prettier
+  - package-ecosystem: bundler
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      time: "01:00"
+      timezone: "Chile/Continental"
+      day: "thursday"
+    open-pull-requests-limit: 3
+    labels:
+      - "Ruby"
+      - "Dependencies"
+      - "Develop"
+    ignore:
+      - dependency-name: acts-as-taggable-on
+        versions:
+          - "> 6.0.0"
+      - dependency-name: progress_bar
+        versions:
+          - "> 1.1.0"
+          - "< 2"
+      - dependency-name: redis
+        versions:
+          - ">= 4.2.a"
+          - "< 4.3"
+      - dependency-name: rubocop
+      - dependency-name: signer
+        versions:
+          - "> 1.5.1"
+          - "< 2"
+      - dependency-name: signer
+        versions:
+          - ">= 1.9.a"
+          - "< 1.10"
+      - dependency-name: will_paginate
+        versions:
+          - ">= 3.3.a"
+          - "< 3.4"
+    groups:
+      rails-deps:
+        patterns:
+          - "actionmailer"
+          - "actionpack"
+          - "actionview"
+          - "activejob"
+          - "activemodel"
+          - "activerecord"
+          - "activesupport"
+          - "railties"

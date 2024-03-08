@@ -1,0 +1,11 @@
+name: Test Automatic Build
+on:
+  release:
+    types: [ published ]
+
+jobs:
+  automatic-build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@83b7061638ee4956cf7545a6f7efe594e5ad0247 # pin@v3
