@@ -26,7 +26,7 @@ group :test do
   gem 'database_cleaner-active_record'
   gem 'rails-controller-testing'
   gem 'rspec-activemodel-mocks'
-  gem 'shoulda-matchers', '6.1.0'
+  gem 'shoulda-matchers', '6.2.0'
   gem 'simplecov', '~> 0.22.0', require: false
   gem 'webmock', '>= 3.6.0'
 end
