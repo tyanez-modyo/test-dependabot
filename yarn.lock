@@ -3396,9 +3396,9 @@ ms@^2.1.1:
   integrity sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==
 
 msw@^2.2.0:
-  version "2.2.3"
-  resolved "https://registry.yarnpkg.com/msw/-/msw-2.2.3.tgz#d05b46d73e8832cbf2145743938635beaaafa0d7"
-  integrity sha512-84CoNCkcJ/EvY8Tv0tD/6HKVd4S5HyGowHjM5W12K8Wgryp4fikqS7IaTOceyQgP5dNedxo2icTLDXo7dkpxCg==
+  version "2.2.11"
+  resolved "https://registry.yarnpkg.com/msw/-/msw-2.2.11.tgz#7d580b859c9ede69768a95d905214999bc76bc0a"
+  integrity sha512-XtIoewF7XWLT0a39Ftkazt9PprBA1bxHZ4CSlomN74sCBJOJU2w5VwLmGlswwsOBhGoF7jovt6bxrSIESxA1KA==
   dependencies:
     "@bundled-es-modules/cookie" "^2.0.0"
     "@bundled-es-modules/statuses" "^1.0.1"
