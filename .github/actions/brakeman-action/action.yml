@@ -1,0 +1,12 @@
+name: Brakeman action
+author: Marcelo
+
+inputs:
+  args:
+    description: "brakeman arguments"
+
+runs:
+  using: docker
+  image: docker://presidentbeef/brakeman
+  args:
+    - ${{ inputs.args }}
